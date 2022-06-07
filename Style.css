@@ -1,0 +1,773 @@
+/* Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Nav y variables generales*/
+.portada {
+    background-image: url(./Pictures/wepik--202251-212210.jpg);
+    height: 40rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-link {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+.nav-item{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+.navbar-toggler {
+    background-color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.3rem;
+}
+.contenedor_index{
+    width: 100%;
+	margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "home_nosotros home_nosotros home_nosotros home_nosotros"
+        "home_productos home_productos home_productos home_productos"
+        "galeria galeria galeria galeria" 
+        "footerindex footerindex footerindex footerindex"; 
+}
+.home_nosotros{
+    grid-area: home_nosotros;
+}
+.home_productos{
+    grid-area: home_productos;
+}
+.galeria{
+    grid-area: galeria;
+}
+.footerindex{
+    grid-area: footerindex;
+}
+
+a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+.titulo{
+    color: white;
+    font-family: 'raleway', cursive;
+    text-align: center;
+    font-size: 2.9rem;
+    clear: left;
+    top: 17rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+    font-weight: bold;
+}
+
+.boton_menu {
+    position: absolute;
+    top: 22.5rem;
+    background-color: darkgoldenrod;
+    width: 12rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 2s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+    text-align: center;
+    color: white;
+}
+.boton_menu a {
+   font-weight: 400;
+   font-size: 1.5rem;
+   color: white;
+}
+.boton_menu:hover {
+    background-color: black;
+}
+
+.logo {
+    background-image: url(./Pictures/1.2.png);
+    width: 250px;
+    height: 120px;
+    text-indent: -99999px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+    z-index: 2;
+    background-color: rgba(0, 128, 0, 0);
+}
+
+/* Home Page Nosotros*/
+
+.home_nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home_nosotros-texto {
+    width: 50%;
+    justify-items: center;
+    margin: 8% 7% 5% 3%;
+    font-weight: 400;
+}
+
+.home_nosotros-texto h2 {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.home_nosotros-texto p {
+    font-size: 1.4rem;
+}
+
+.home_nosotros-img img {
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.home_nosotros-texto a {
+    width: 9rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    background-color:darkgoldenrod;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home_nosotros-texto a:hover {
+    background-color: black;
+}
+
+/* Home Page Productos*/
+
+.home_productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home_productos-texto {
+    width: 50%;
+    justify-items: center;
+    margin: 8% 7% 5% 3%;
+    font-weight: 400;
+}
+
+.home_productos-texto h2 {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.home_productos-texto p {
+    font-size: 1.4rem;
+}
+
+.home_productos-video{
+    margin-left: 50%;
+    margin-top: 15%;
+    float: right;
+}
+
+.home_productos-texto a {
+    width: 9rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    background-color:darkgoldenrod;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home_productos-texto a:hover {
+    background-color: black;
+}
+
+/* Home Page Galeria*/
+.galeria {
+    display: flex;
+    flex-direction: row;
+}
+
+.galeria img {
+    width: 25%;
+    height: 100%;
+}
+
+/* Footer*/
+
+footer {
+    background-color:#B5966A;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer_logo {
+    margin-top: 2.5rem;
+}
+
+footer img {
+    margin: 1.5rem;
+}
+
+.footer_coffee {
+    margin: 2rem 1.5rem 2px;
+    width: 16rem;
+    justify-self: end;
+}
+
+.footer_coffee p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer_coffee img {
+    margin: 1rem 0.5rem;
+    position: relative;
+    left: 2rem;
+}
+
+/* Html Menú */
+
+.portada_Menu {
+    background-image: url(./Pictures/Portada\ Menu.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuu {
+    background-image: url(./Pictures/menufondo2.jpg);
+    height: 45rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menudetalle {
+    background-color: rgb(245, 240, 240);
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    margin-top: 8rem;
+    padding: 2rem;
+    color: #B5966A;    
+}
+.menudetalle:hover {
+    transform: scale(1.2,1.2);
+ }
+
+.menudetalle h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+/* Html Contacto */
+
+.portada_Contacto {
+    background-image: url(./Pictures/wepik--202251-212210.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Contacto {
+    margin: 6rem 10% 0rem 10%;
+}
+
+.Contacto h1 {
+    text-align: center;
+}
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.formulario form {
+    margin: 2rem 10%;
+    font-size: 1rem;
+}
+.formulario form input {
+    font-family: 'Raleway', sans-serif;
+}
+.formulario form textarea {
+    font-family: 'Raleway', sans-serif;
+}
+.formulario .nombreapellido input{
+    height: 35px;
+    width: (100%/2 - 20px);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.formulario .email input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.formulario .nacimiento input{
+    height: 35px;
+    width: 50%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.formulario .razones select{
+    height: 35px;
+    width: 50%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.formulario .comentarios textarea{
+    height: 105px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.formulario .novedades input{
+    height: 12px;
+    width: 5%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.formulario .button_contacto input{
+    height: 35px;
+    width: 100%;
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+
+/* Html Productos */
+
+.portada_Productos {
+    background-image: url(./Pictures/Portada\ productos.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.productos_texto {
+    margin: 10% 20% 5% 20%;
+    text-align: center;
+}
+
+.productos_texto p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+.contenedor_productos{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ab c"
+    "d ef"
+    "gh g";
+    justify-items: center;
+}
+.contenedor_productos h2{
+    font-size: 1.4rem;
+}
+.contenedor_productos p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+.contenedor_productos img {
+    width: 100%;
+}
+
+
+.ab{
+    grid-area: ab;
+    text-align: right;
+    position: relative;
+    top: 30%;
+    margin-left: 20%;
+}
+.ef{
+    grid-area: ef;
+    position: relative;
+    top: 30%;
+    margin-right: 20%;
+}
+.c{
+    grid-area: c;
+    justify-self: center;
+}
+.d{
+    grid-area: d;
+    justify-self: center;
+}
+.gh{
+    grid-area: gh;
+    text-align: right;
+    position: relative;
+    top: 30%;
+    margin-left: 20%;
+}
+.g{
+    grid-area: g;
+    justify-self: center;
+}
+
+/* Html Nosotros */
+
+.portada_Nosotros {
+    background-image: url(./Pictures/Portada\ Nosotros.jpg);
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nosotros-texto {
+    text-align: center;
+    font-weight: 400;
+    margin: 5% 10% 5% 0%;
+    width: 60%;
+}
+
+.nosotros-texto h2 {
+    text-align: center;
+}
+
+.nosotros-texto p {
+    font-size: 1.4rem;
+}
+.nosotros-img{
+    margin: 5% 5% 5% 10%;
+    width: 40%;
+}
+.nosotros-img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .nosotros-img {
+        margin: 5% 5% 5% 5%;
+        width: 45%;
+    }
+    
+    .nosotros-texto {
+        margin: 5% 5% 5% 0%;
+        text-align: center;
+        width: 55%;
+    }
+    
+    .nosotros-texto p {
+        font-size: 0.9rem;
+    }
+    .menuu {
+        height: 55rem;
+    }
+    
+    .menu_detalle {
+        height: 23rem;
+        width: 90%;
+        text-align: center;
+        margin-top: 7%;
+        padding: 2% 2%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+/* Media Screen for Index */
+
+    .portada {
+        height: 25rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: .7rem 1rem;
+    }
+
+    .bg-transparent {
+        background-color: black !important;
+        z-index: 1;
+    }
+    .logo {
+        background-image: url(./Pictures/celular\ logo.png);
+        background-repeat: no-repeat;
+        left: 0.3rem;
+    }
+    .titulo{
+        font-size: 1.5rem;
+        top: 10rem;
+    }
+    
+    .boton_menu {
+        top: 13rem;
+        background-color: darkgoldenrod;
+        width: 8rem;
+    }
+    .boton_menu a {
+       font-size: 1rem;
+    }
+    .home_nosotros-texto {
+        width: 100%;
+        justify-items: center;
+        margin: 8% 7% 5% 3%;
+        font-weight: 100;
+    }
+    
+    .home_nosotros-texto h2 {
+        font-size: 1.2rem;
+    }
+    
+    .home_nosotros-texto p {
+        font-size: 0.8rem;
+    }
+    
+    .home_nosotros-img img {
+        width: 80%;
+    }
+    
+    .home_nosotros-texto a {
+       font-size: 0.8rem;
+       width: 8rem;
+    }
+    .home_productos-texto {
+        width: 100%;
+        justify-items: center;
+        margin: 8% 7% 5% 3%;
+        font-weight: 100;
+    }
+    
+    .home_productos-texto h2 {
+        font-size: 1.2rem;
+    }
+    
+    .home_productos-texto p {
+        font-size: 0.8rem;
+    }
+    
+    .home_productos-video{
+       
+        float: right;
+    }
+    
+    .home_productos-texto a {
+       font-size: 0.8rem;
+       width: 8rem;
+    }
+    
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    footer img {
+        margin: 0.5rem;
+    }
+    .footer_coffee p {
+        font-weight: 1 00;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .footer_logo {
+        justify-self: center;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .footer_coffee {
+            justify-self: center;
+    }
+
+/* Media Screen for productos.html */
+
+    .portada_Productos {
+    height: 25rem;
+    }
+    .productos_texto h1{
+    margin: 5% 20% 5% 20%;
+    font-size: 1.2rem;
+    }
+    .productos_texto p {
+    font-size: 0.8rem;
+    }
+    .contenedor_productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-areas: 
+    "c"
+    "ab"
+    "d"
+    "ef"
+    "g" 
+    "gh";
+    justify-items: center;
+    }
+    .contenedor_productos h2{
+    font-size: 1.2rem;
+    }
+    .contenedor_productos p {
+    font-size: 0.8rem;
+    }
+
+    .contenedor_productos img {
+    width: 100%;
+    }
+
+    .ab{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    top: 0%; 
+    }
+    .ef{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    top: 0%;
+    }
+
+    .gh{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    top: 0%;
+    }
+
+    /* Media Screen for menu.html */
+    .menuu {
+        height: 25rem;
+    }
+    .menudetalle {
+        margin: 10% 10% 5% 10%;
+        text-align: center;
+    }
+
+    .menudetalle  p {
+        font-size: 0.85rem;
+    }
+    /* Media Screen for nosotros.html */
+    .portada_Nosotros {
+        height: 25rem;
+        }
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .nosotros-img {
+        width: 80%;
+        align-self: center;
+        margin: 10%;
+    }
+    
+    .nosotros-texto {
+        text-align: center;
+        width: 90%;
+        align-self: center;
+        margin: 5%;
+    }
+    
+}
+
+
+
+
+
